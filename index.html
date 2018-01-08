@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>MyCryptoHippo</title>
+  <title>myCryptoHippo</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -22,7 +22,9 @@
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/modernizr-2.7.1.js"></script>
-  
+
+
+
 </head>
 
 <body>
@@ -32,15 +34,13 @@
   <script src="js/particles.min.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
-
-
-
-      <div class="container">
+  
+ 
+    <header>
+      <div class="container col-md-offset-5">
         <div class="row">
-          <div class="wow fadeIn" data-wow-delay="0.0s">
-            <img href="index.html"><img id = 'hippo' src="img/logo.png" alt="Logo">
-          </div>
-          <div class="col-xs-6 signin text-right navbar-nav">
+          <div class="col-xs-6" data-wow-delay="0.0s">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
           </div>
         </div>
         
@@ -48,21 +48,23 @@
           <div class="col-sm-10 col-sm-offset-1 text-center">
             <h1 class="wow fadeIn">Coming soon.</h1>
             <br />
-            <p class="lead wow fadeIn" data-wow-delay="0.5s">Join the herd. <br>
-            Sign up to be notified when we launch.</p>
+            <p class="lead wow fadeIn" data-wow-delay="0.5s">A cryptocurrency-market simulator. <br>
+             Get ready to join the herd.</p>
             <br />
-            <div class="row">
+
+             <div class="row">
               <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                 <div class="row">
-                  <div style="margin-left: 10vw" class="col-xs-8 text-right wow fadeInUp" data-wow-delay="1s">
-                    <div class="wrapper">
-                      <input type="text" style="color: black; font-size: 4.5vh" size="50"/>
-                      <button style="color:white; font-size:15px; padding-right:35px;height:50px;width:30px">GO </button>
-                    </div>
+                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                    <a href="https://medium.com/mycryptohippo" class="btn btn-secondary btn-lg scroll">Learn More</a>
+                  </div>
+                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#invite" class="open-popup btn btn-primary btn-lg scroll">Request Invite</a>
                   </div>
                 </div><!--End Button Row-->  
               </div>
-            </div>
+            </div>   
+
             
           </div>
         </div>
@@ -80,7 +82,26 @@
     <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
-   
-    </body>
-</html>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: 
+    false"></script>
+	
+	<script type="text/javascript">
+	
+	function showMailingPopUp() {
+	    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"dd9d708191677b444855e228c","lid":"9c54a123a3"})})
+	    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";                  
+	};
+	
+	$(function() {
+	    $(".open-popup").on('click', function() { 
+	        showMailingPopUp();
+	    });
+	});
+	
+	</script>
+	
+	    </body>
+	</html>
+	   
+	    </body>
+	</html>
